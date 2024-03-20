@@ -1,0 +1,85 @@
+body {
+    font-family: Mohave, sans-serif;
+    background-color: #d3ebe6;
+    color:#000000; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Homenaje;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+h2 {
+    font-size: 25pt;
+    text-decoration: underline;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-style: italic;
+}
+
+#gallery figure, img{
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Bio Section */
+
+#bio {
+    font-size: larger;
+    text-align: center;
+}
+
+/* Reviews Section */
+
+#reviews {
+    font-size: larger;
+    text-align: center;
+}
+
+/* Tablet Size */
+
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+}
+
+/* Large Screen Size */
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+#gallery h2 {
+    grid-column: 1/-1;
+}
+
+figure {
+    display: block;
+
+}
+
+}
